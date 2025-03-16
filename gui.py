@@ -65,3 +65,9 @@ class SudokuGUI:
         for i in range(9):
             for j in range(9):
                 self.cells[i][j].delete(0, tk.END)
+
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    gui = SudokuGUI(root)
+    root.mainloop()
